@@ -1,7 +1,7 @@
 /* General body styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f8ff; /* Light blue background */
+    font-family: 'Fira Sans', sans-serif;
+    background-color: #bcd8e7; /* Light blue background */
     color: #333;
     margin: 0;
     padding: 0;
@@ -10,52 +10,80 @@ body {
     align-items: center;
     height: 100vh;
 }
+
 /* Container to center content */
 .container {
     width: 100%;
     max-width: 800px;
-    background-color: #ffe6f2; /* Light pink background for main container */
+    background-color: #fffbdc; /* Light yellow background for main container */
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 40px;
     text-align: center;
-    line-height: 1.6; /* Increased line height for better readability */
+    line-height: 1.6;
 }
 
 /* Styling for the first sentence to make it bold */
 .container .welcome-first-sentence {
     font-weight: bold;
-    font-family: 'Arial', sans-serif; /* Optional: Set a font */
-    font-size: 1.2em; /* Slightly larger font size */
+    font-size: 1.2em;
 }
 
 /* General styling for the second sentence */
 .container .welcome-second-sentence {
-    font-size: 1em; /* Normal font size */
-    color: #333; /* Dark color for readability */
+    font-size: 1em;
+    color: #333;
 }
 
 /* Learning session */
 #learning-session img {
-    max-width: 300px; /* Maximum width limit */
-    width: auto;      /* Automatically adjust to natural width if under 300px */
-    height: auto;     /* Maintain aspect ratio */
+    max-width: 300px;
+    width: auto;
+    height: auto;
     border-radius: 8px;
     border: 2px solid #add8e6;
     margin-top: 20px;
 }
 
-
 /* Game session */
 #game-image {
-    max-width: 250px; /* Maximum width limit */
-    width: auto;      /* Automatically adjust to natural width if under 300px */
-    height: auto;     /* Maintain aspect ratio */
+    max-width: 250px;
+    width: auto;
+    height: auto;
     margin-top: 10px;
     border: 2px solid #add8e6;
     border-radius: 8px;
 }
 
+/* Adjusting the container for the image in the game session to center it */
+#game-image-container {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center;     /* Vertically center */
+    height: 100%;            /* Take up full height of parent container */
+}
 
+/* Button styling */
+button {
+    background-color: #add8e6;
+    color: #333;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1em;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
 
+/* Button hover effect */
+button:hover {
+    background-color: #ffcc00;
+    transform: scale(1.05);
+}
 
+/* Button focus effect */
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px #ffcc00;
+}
