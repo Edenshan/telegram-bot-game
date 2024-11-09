@@ -1,0 +1,61 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/* Container to center content */
+.container {
+    width: 100%;
+    max-width: 800px;
+    background-color: #ffe6f2; /* Light pink background for main container */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    text-align: center;
+    line-height: 1.6; /* Increased line height for better readability */
+}
+
+/* Styling for the first sentence to make it bold */
+.container .welcome-first-sentence {
+    font-weight: bold;
+    font-family: 'Arial', sans-serif; /* Optional: Set a font */
+    font-size: 1.2em; /* Slightly larger font size */
+}
+
+/* General styling for the second sentence */
+.container .welcome-second-sentence {
+    font-size: 1em; /* Normal font size */
+    color: #333; /* Dark color for readability */
+}
+
+/* Learning session */
+#learning-session img {
+    max-width: 300px; /* Maximum width limit */
+    width: auto;      /* Automatically adjust to natural width if under 300px */
+    height: auto;     /* Maintain aspect ratio */
+    border-radius: 8px;
+    border: 2px solid #add8e6;
+    margin-top: 20px;
+}
+
+
+/* Game session */
+#game-image {
+    max-width: 650px; /* Maximum width limit */
+    width: auto;      /* Automatically adjust to natural width if under 300px */
+    height: auto;     /* Maintain aspect ratio */
+    margin-top: 10px;
+    border: 2px solid #add8e6;
+    border-radius: 8px;
+}
+
+
+
+

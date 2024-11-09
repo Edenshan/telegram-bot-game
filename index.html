@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Observation Game</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <!-- Welcome screen with start button -->
+        <div id="welcome-screen">
+            <p id="welcome-first-sentence">Welcome, this is an observation game for Chinese beginners (HSK1,2)
+            </p>
+
+
+            <button id="start-game-button">Start</button>
+        </div>
+
+        <!-- Difficulty selection buttons -->
+        <div id="difficulty-selection" style="display: none;">
+            <p>Choose difficulty level:</p>
+            <button onclick="setDifficulty(1)">Basic</button>
+            <button onclick="setDifficulty(2)">Medium</button>
+            <button onclick="setDifficulty(3)">Intermediate</button>
+        </div>
+
+        <!-- Post-welcome options -->
+        <div id="post-welcome-options" style="display: none;">
+            <button id="learn-words-button">Learn Words for Game</button>
+            <button onclick="skipLearningAndStartGame()">Skip and Start Game</button>
+        </div>
+            
+        <!-- Learning session section -->
+        <div id="learning-session" style="display: none;">
+            <img id="word-image" src="" alt="Word Image" />
+            <p id="word-chinese"></p>
+            <p id="word-pinyin"></p>
+            <p id="word-english"></p>
+            <audio id="word-audio" controls></audio>
+
+            <button id="prev-word" onclick="prevWord()">Previous</button>
+            <button id="next-word" onclick="nextWord()">Next</button>
+            <button id="start-game-from-learning-button">Start Game</button>
+        </div>
+
+        <!-- Game session with randomly selected image -->
+        <div id="game-session" style="display: none;">
+            <div id="hourglass-container"></div> 
+            <img id="game-image" style="display: none;">
+            <div id="question-section">
+                <p id="question-pinyin"></p>
+                <p id="question-chinese"></p>
+                <button id="next-question-button" onclick="showNextQuestion()" style="display: none;">Next Question</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- Ensure this script is placed here, just before the closing body tag -->
+    <script src="script.js"></script>
+</body>
+</html>
