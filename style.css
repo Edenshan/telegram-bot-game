@@ -48,7 +48,7 @@ body {
 
 /* Game session */
 #game-image {
-    max-width: 650px; /* Maximum width limit */
+    max-width: 350px; /* Maximum width limit */
     width: auto;      /* Automatically adjust to natural width if under 300px */
     height: auto;     /* Maintain aspect ratio */
     margin-top: 10px;
