@@ -74,6 +74,7 @@ button {
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 10px; /* Adds space between buttons */
 }
 
 /* Button hover effect */
@@ -86,4 +87,21 @@ button:hover {
 button:focus {
     outline: none;
     box-shadow: 0 0 5px #ffcc00;
+}
+
+/* Container for buttons to handle spacing */
+.button-container {
+    display: flex;
+    flex-wrap: wrap; /* Wraps buttons to avoid overlap on smaller screens */
+    gap: 10px;       /* Adds space between buttons */
+    justify-content: center; /* Centers buttons in container */
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 767px) {
+    button {
+        padding: 10px 20px;  /* Reduces button padding on smaller screens */
+        font-size: 0.9em;    /* Reduces font size for smaller screens */
+        width: 100%;         /* Makes buttons full width on small screens */
+    }
 }
